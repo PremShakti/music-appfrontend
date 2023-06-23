@@ -1,5 +1,5 @@
 import React from 'react'
-
+import '../App.css'
 const List = ({id,original_title,playClick}) => {
 const handleClick=()=>{
     playClick(id)
@@ -7,11 +7,11 @@ const handleClick=()=>{
 }
 
   return (
-    <div>
+    <div className='plist'>
 
-     <div style={{fontSize:'small'}} onClick={handleClick} >{original_title}</div> 
-     <br />
-      
+     <div className='list' onClick={handleClick} >{original_title}</div> 
+   
+     
     </div>
   )
 }
