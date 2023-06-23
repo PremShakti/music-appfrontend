@@ -37,3 +37,11 @@ form{
   padding: 5px;
   border-radius: 10px;
 }
+audio{
+  display: block;
+  margin: auto;
+  background-color: black;
+  border: 1px solid rgb(39, 169, 255);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
