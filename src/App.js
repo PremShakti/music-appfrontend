@@ -6,6 +6,7 @@ import Player from './components/Player';
 function App() {
   return (
     <div className="App">
+      <h1>Free Music</h1>
      <Player/>
     </div>
   );
