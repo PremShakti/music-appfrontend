@@ -4,10 +4,13 @@
 .plist{
   background-color: rgb(12, 166, 255);
   padding: 10px;
+  padding-left: 10px;
 }
 .list{
   font-size: small;
   text-align: left;
+  font-family: sans-serif;
+  
   
 }
 
