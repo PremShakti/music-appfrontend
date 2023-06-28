@@ -22,9 +22,9 @@ SetSerachDatta(e.target.value)
 const handlesubmit=(e)=>{
     e.preventDefault()
     Setstatus(true)
-    // axios.get(`https://wicked-tuna-lapel.cyclic.app/search?search=${searchData}`)
+    axios.get(`https://wicked-tuna-lapel.cyclic.app/search?search=${searchData}`)
     
-    axios.get(`http://localhost:8080/search?search=${searchData}`)
+    // axios.get(`http://localhost:8080/search?search=${searchData}`)
     .then((data)=>{
       
         SetSowData(data.data.data.videos)
@@ -45,7 +45,7 @@ const handlesubmit=(e)=>{
 const playClick=(id)=>{
  
   Setstatus(true)
- axios.get(`http://localhost:8080/play?url=https://www.youtube.com/watch?v=${id}`, {responseType: 'arraybuffer' })
+ axios.get(`https://wicked-tuna-lapel.cyclic.app/play?url=https://www.youtube.com/watch?v=${id}`, {responseType: 'arraybuffer' })
       .then(response => {
         
         const thumbnailURL = response.headers['x-thumbnail-url'];
@@ -78,7 +78,7 @@ useEffect(()=>{
 
   const time=setTimeout(()=>{
     
-    axios.get(`http://localhost:8080/search?search=${searchData}`)
+    axios.get(`https://wicked-tuna-lapel.cyclic.app/search?search=${searchData}`)
     .then((data)=>{
       
         SetSowData(data.data.data.videos)
